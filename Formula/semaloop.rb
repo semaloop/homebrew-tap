@@ -5,21 +5,21 @@
 class Semaloop < Formula
   desc "Command-line interface for Semaloop"
   homepage "https://semaloop.com"
-  version "1.0.0"
+  version "1.1.0"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/semaloop/cli/releases/download/v1.0.0/cli_Darwin_x86_64.tar.gz"
-      sha256 "f8edcc6d353e9781d582abb18b1e7bc31d247431facf2ed318aa59287b384bcc"
+      url "https://github.com/semaloop/cli/releases/download/v1.1.0/cli_Darwin_x86_64.tar.gz"
+      sha256 "fc9d45f3ab6a88029f49f9513406e51d9c361a30d79eaa9ff90e64dd4bde9794"
 
       def install
         bin.install "semaloop"
       end
     end
     on_arm do
-      url "https://github.com/semaloop/cli/releases/download/v1.0.0/cli_Darwin_arm64.tar.gz"
-      sha256 "9bdd9a5e107f81c3efe6cfae4a044a6ef79e4b6701be54715f1545d315cfecbe"
+      url "https://github.com/semaloop/cli/releases/download/v1.1.0/cli_Darwin_arm64.tar.gz"
+      sha256 "7dcc7d2548ae527b7de27eb499599289d330950b34b820e4eff5970bbad22b07"
 
       def install
         bin.install "semaloop"
@@ -30,8 +30,8 @@ class Semaloop < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/semaloop/cli/releases/download/v1.0.0/cli_Linux_x86_64.tar.gz"
-        sha256 "6bd694edeabc297778fef7776b15ec6cfde5fd55db8e38c40ca113d8189fdcd8"
+        url "https://github.com/semaloop/cli/releases/download/v1.1.0/cli_Linux_x86_64.tar.gz"
+        sha256 "acdd6469099d24b3647992b68a5cd0ed2e110a05ed781358f69f1e7a9c94c19b"
 
         def install
           bin.install "semaloop"
@@ -40,8 +40,8 @@ class Semaloop < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/semaloop/cli/releases/download/v1.0.0/cli_Linux_arm64.tar.gz"
-        sha256 "6775bfd85bd433f2768f745cc9b64373ee690bab4e1a78176db482a07570ebae"
+        url "https://github.com/semaloop/cli/releases/download/v1.1.0/cli_Linux_arm64.tar.gz"
+        sha256 "83f5272021a77a8f03f3ab3357d355ea060d4337adddeea9a575bf3844b17cf5"
 
         def install
           bin.install "semaloop"
