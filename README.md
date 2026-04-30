@@ -1,4 +1,4 @@
-# Semaloop Homebrew Tap
+# Semaloop Homebrew taps
 
 Homebrew formulas for [Semaloop](https://semaloop.com) tools.
 
@@ -21,6 +21,4 @@ brew install semaloop/tap/semaloop
 
 ## Updating formulas
 
-Formulas in this repository are updated automatically by [GoReleaser](https://goreleaser.com)
-when a new version of the corresponding tool is released. Do not edit them by hand —
-changes will be overwritten on the next release.
+Formulas in this repository are updated automatically by [GoReleaser](https://goreleaser.com) when a new version of the corresponding tool is released. Do not edit them by hand — changes will be overwritten on the next release.
