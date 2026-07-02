@@ -5,21 +5,21 @@
 class Semaloop < Formula
   desc "Command-line interface for Semaloop"
   homepage "https://semaloop.com"
-  version "1.5.0"
+  version "1.6.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/semaloop/cli/releases/download/v1.5.0/cli_Darwin_x86_64.tar.gz"
-      sha256 "93baed7a413ead6dec2e1a4b3029415c1aa33d1e43053b7677bc54a1dea533ef"
+      url "https://github.com/semaloop/cli/releases/download/v1.6.0/cli_Darwin_x86_64.tar.gz"
+      sha256 "f8c6dbf5bd79517c091b43e4f0e6e3528ee0a8567b7794e4b3c6e5d1275ea521"
 
       define_method(:install) do
         bin.install "semaloop"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/semaloop/cli/releases/download/v1.5.0/cli_Darwin_arm64.tar.gz"
-      sha256 "0c93665fea4b144dc337ffb56bcf6154bf165342f9edd6f69c93482eff4fe702"
+      url "https://github.com/semaloop/cli/releases/download/v1.6.0/cli_Darwin_arm64.tar.gz"
+      sha256 "dd7b0bce47f03cf2f442659b63c92670b0f7215df460bf8bbd3c843fd6d0b118"
 
       define_method(:install) do
         bin.install "semaloop"
@@ -29,15 +29,15 @@ class Semaloop < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/semaloop/cli/releases/download/v1.5.0/cli_Linux_x86_64.tar.gz"
-      sha256 "6154a2163c8c32012067af6c40d8d13545f41cd1b6cf88e9e8e8ad66c16d3376"
+      url "https://github.com/semaloop/cli/releases/download/v1.6.0/cli_Linux_x86_64.tar.gz"
+      sha256 "fce6b3c425c6c559733012884b5a1107d81582488db2c96a7ec2db0073f080e9"
       define_method(:install) do
         bin.install "semaloop"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/semaloop/cli/releases/download/v1.5.0/cli_Linux_arm64.tar.gz"
-      sha256 "549b69bc5fef46b9c71b96513f61bdfb19534b66444fae18440bde43fcb3f0c6"
+      url "https://github.com/semaloop/cli/releases/download/v1.6.0/cli_Linux_arm64.tar.gz"
+      sha256 "0b66eb6eb6d42bb4a92897e8924b3aa796a138a2e023286086b6bed7c6a87068"
       define_method(:install) do
         bin.install "semaloop"
       end
