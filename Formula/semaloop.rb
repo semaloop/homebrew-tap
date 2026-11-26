@@ -5,13 +5,13 @@
 class Semaloop < Formula
   desc "Command-line interface for Semaloop"
   homepage "https://semaloop.com"
-  version "1.15.0"
+  version "1.16.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/semaloop/cli/releases/download/v1.15.0/cli_Darwin_x86_64.tar.gz"
-      sha256 "a5db88306d6dee0239dddf9d71d205cdf5dde60bdf0180c2ebb72df8f8824b05"
+      url "https://github.com/semaloop/cli/releases/download/v1.16.0/cli_Darwin_x86_64.tar.gz"
+      sha256 "842fa3e5fb5ebfa02adc0269c706a11181d543f2add5b894f6481b7f8a3c401e"
 
       define_method(:install) do
         bin.install "semaloop"
@@ -19,8 +19,8 @@ class Semaloop < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/semaloop/cli/releases/download/v1.15.0/cli_Darwin_arm64.tar.gz"
-      sha256 "ae3f6551938add184f3f1bb118472cacfdb50151647a5bc0560e586a2201d191"
+      url "https://github.com/semaloop/cli/releases/download/v1.16.0/cli_Darwin_arm64.tar.gz"
+      sha256 "7bb2d309da331108da6f013d65bcbe86f81f7ff6fc8bbca30b6b797d7e3e0e68"
 
       define_method(:install) do
         bin.install "semaloop"
@@ -31,16 +31,16 @@ class Semaloop < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/semaloop/cli/releases/download/v1.15.0/cli_Linux_x86_64.tar.gz"
-      sha256 "fd71913a5e4343b340f0c8618565dfc0c305402d868231987a18132de04f3521"
+      url "https://github.com/semaloop/cli/releases/download/v1.16.0/cli_Linux_x86_64.tar.gz"
+      sha256 "11452386f76d7214c71a5c3316c0ba74adc8640de84043e1c70bba2bb1026c2b"
       define_method(:install) do
         bin.install "semaloop"
         generate_completions_from_executable(bin/"semaloop", "completion")
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/semaloop/cli/releases/download/v1.15.0/cli_Linux_arm64.tar.gz"
-      sha256 "8d7008ada6dc2f23e7b3b37b2afca0e7c85f3bae5042ce89ddb58bf7e6cfb32c"
+      url "https://github.com/semaloop/cli/releases/download/v1.16.0/cli_Linux_arm64.tar.gz"
+      sha256 "4b0617aee5c796a51e9a26ba4f2cbcf4f27c1e1f64345889727c09a7bcfb7ba9"
       define_method(:install) do
         bin.install "semaloop"
         generate_completions_from_executable(bin/"semaloop", "completion")
